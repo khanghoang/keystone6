@@ -6,7 +6,7 @@
     "db-up": "docker-compose up -d",
     "dx": "cross-env DATABASE_URL=postgresql://postgres:@localhost:5632/db run-s db-up dev",
     "dev": "next dev",
-    "build": "next build",
+    "build": "prisma generate && next build",
     "start": "next start",
     "lint": "next lint",
     "postinstall": "keystone postinstall && prisma generate"
